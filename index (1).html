@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>System Breach</title>
+  <style>
+    body {
+      background-color: black;
+      color: lime;
+      font-family: monospace;
+      text-align: center;
+      padding-top: 100px;
+    }
+    .blink {
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0% {opacity: 1;}
+      50% {opacity: 0;}
+      100% {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+
+  <h1>⚠ SYSTEM HACKED ⚠</h1>
+  <p>Accessing personal files...</p>
+  <p>Uploading data...</p>
+  <p class="blink">DO NOT TURN OFF YOUR DEVICE</p>
+
+  <br><br>
+  <button onclick="reveal()">What is happening?!</button>
+
+  <script>
+    function reveal() {
+      document.body.innerHTML = "<h1>😂 Relax! It's just a prank!</h1>";
+    }
+  </script>
+
+</body>
+</html>
